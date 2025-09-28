@@ -17,6 +17,8 @@ import {
   Zap
 } from 'lucide-react';
 
+import profilePic from "../src/assets/Image.png";
+
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
 
@@ -114,7 +116,7 @@ function App() {
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-emerald-400 p-1">
                 <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/src/Image.png"   // replace with your actual image path
+                    src={profilePic}
                     alt="Harsh Dhoke"
                     className="w-full h-full object-cover"
                   />
